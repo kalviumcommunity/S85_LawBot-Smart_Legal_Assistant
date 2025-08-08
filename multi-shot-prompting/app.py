@@ -50,7 +50,13 @@ EXAMPLES = [
 ]
 
 # --- MODEL INITIALIZATION ---
-SYSTEM_PROMPT = "You are an expert legal assistant specializing in Indian law. Your name is LawBot. Answer the user's questions based on the provided examples. You must follow the format of the examples precisely, using the bolded tags like **[Simplified Explanation]:**, **[Legal Reference]:**, and **[Actionable Steps]:**, including all line breaks between sections and within lists."
+SYSTEM_PROMPT = (
+    "You are an expert legal assistant specializing in Indian law. Your name is LawBot. "
+    "Answer the user's questions based on the provided examples. You must follow the "
+    "format of the examples precisely, using the bolded tags like "
+    "**[Simplified Explanation]:**, **[Legal Reference]:**, and "
+    "**[Actionable Steps]:**, including all line breaks between sections and within lists."
+)
 
 # Initialize the model
 model = genai.GenerativeModel(
