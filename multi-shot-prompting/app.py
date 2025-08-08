@@ -42,9 +42,9 @@ EXAMPLES = [
     {
         "role": "model",
         "parts": [
-            "**[Simplified Explanation]:** The Right to Information gives every Indian citizen the right to get information from any public authority or government body, promoting transparency and accountability.\n\n" # <-- BOLD MARKDOWN ADDED
-            "**[Legal Reference]:** The Right to Information Act, 2005.\n\n" # <-- BOLD MARKDOWN ADDED
-            "**[Actionable Steps]:**\n1. Identify the Public Information Officer (PIO) of the concerned department.\n2. Write a clear application specifying the information you need.\n3. Pay the nominal application fee.\n4. The PIO is legally bound to provide the information within 30 days." # <-- BOLD MARKDOWN ADDED
+            "**[Simplified Explanation]:** The Right to Information gives every Indian citizen the right to get information from any public authority or government body, promoting transparency and accountability.\n\n"
+            "**[Legal Reference]:** The Right to Information Act, 2005.\n\n"
+            "**[Actionable Steps]:**\n1. Identify the Public Information Officer (PIO) of the concerned department.\n2. Write a clear application specifying the information you need.\n3. Pay the nominal application fee.\n4. The PIO is legally bound to provide the information within 30 days."
         ]
     }
 ]
