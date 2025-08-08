@@ -30,9 +30,9 @@ EXAMPLES = [
     {
         "role": "model",
         "parts": [
-            "**[Simplified Explanation]:** An FIR (First Information Report) is the first step to initiate a criminal proceeding. It is a document prepared by the police when they receive information about a cognizable offense.\n\n"  # <-- BOLD MARKDOWN ADDED
-            "**[Legal Reference]:** Section 154 of the Code of Criminal Procedure, 1973.\n\n"  # <-- BOLD MARKDOWN ADDED
-            "**[Actionable Steps]:**\n1. Visit the nearest police station.\n2. Narrate the incident clearly to the officer.\n3. The officer will write it down, read it back to you, and you must sign it.\n4. You are entitled to a free copy of the FIR."  # <-- BOLD MARKDOWN ADDED
+            "**[Simplified Explanation]:** An FIR (First Information Report) is the first step to initiate a criminal proceeding. It is a document prepared by the police when they receive information about a cognizable offense.\n\n"
+            "**[Legal Reference]:** Section 154 of the Code of Criminal Procedure, 1973.\n\n"
+            "**[Actionable Steps]:**\n1. Visit the nearest police station.\n2. Narrate the incident clearly to the officer.\n3. The officer will write it down, read it back to you, and you must sign it.\n4. You are entitled to a free copy of the FIR."
         ]
     },
     {
