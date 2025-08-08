@@ -81,4 +81,5 @@ if st.button("Get Legal Advice"):
                 st.markdown(response.text)
 
             except Exception as e:
-                st.error(f"An error occurred: {e}")
+                # In a production app, you would log the full error here, e.g., logging.error(e)
+                st.error("An error occurred while generating your advice. Please try again.")
