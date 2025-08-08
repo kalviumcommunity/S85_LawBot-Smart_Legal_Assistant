@@ -64,12 +64,12 @@ if st.button("Get Legal Advice"):
     else:
         with st.spinner("LawBot is crafting your personalized advice..."):
             try:
-                # This is the DYNAMIC PROMPT creation using an f-string
+                # This is the DYNAMIC PROMPT creation, structured to reduce injection risk.
+                details_part = f" Here are some additional details: '{extra_details}'." if extra_details else ""
                 final_prompt = (
-                    f"I am facing a legal issue in '{location}', India. "
-                    f"The main problem is: '{legal_issue}'. "
-                    f"Here are some additional details: '{extra_details}'. "
-                    f"Based on this specific situation, what are my rights and what should I do?"
+                    f"A user is facing a legal issue in '{location}', India. "
+                    f"The main problem is: '{legal_issue}'.{details_part} "
+                    f"Based on this specific situation, what are their rights and what should they do?"
                 )
 
                 # We still use the examples to guide the output format
