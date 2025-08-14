@@ -14,11 +14,11 @@ st.set_page_config(
 )
 
 # Configure the Gemini API
-try:
-    genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-except AttributeError:
+api_key = os.getenv("GEMINI_API_KEY")
+if not api_key:
     st.error("🚨 Gemini API key not found. Please create a .env file with your key.")
     st.stop()
+genai.configure(api_key=api_key)
 
 # --- ONE-SHOT EXAMPLE WITH CHAIN OF THOUGHT ---
 # We use a single, powerful example (One-Shot) to teach the CoT process.
