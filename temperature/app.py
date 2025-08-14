@@ -93,4 +93,6 @@ if st.button("Get Legal Advice"):
                 st.markdown(response.text)
 
             except Exception as e:
-                st.error(f"An error occurred: {e}")
+                st.error("An unexpected error occurred while generating advice. Please try again later.")
+                # For debugging, the error is printed to the console where Streamlit is running.
+                print(f"An error occurred: {e}")
