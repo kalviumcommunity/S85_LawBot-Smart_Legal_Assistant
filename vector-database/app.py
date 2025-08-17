@@ -48,10 +48,15 @@ try:
     # Generate embeddings for each chunk (this might take a moment on first run)
     with st.spinner("Building the AI's memory... Please wait."):
         if "embeddings" not in st.session_state:
-            st.session_state.embeddings = [get_embedding(chunk) for chunk in text_chunks]
-            # Filter out any None embeddings
-            st.session_state.text_chunks = [chunk for i, chunk in enumerate(text_chunks) if st.session_state.embeddings[i] is not None]
-            st.session_state.embeddings = [emb for emb in st.session_state.embeddings if emb is not None]
+            embeddings = []
+            valid_chunks = []
+            for chunk in text_chunks:
+                emb = get_embedding(chunk)
+                if emb is not None:
+                    embeddings.append(emb)
+                    valid_chunks.append(chunk)
+            st.session_state.embeddings = embeddings
+            st.session_state.text_chunks = valid_chunks
 
     # Create a FAISS index
     embeddings_np = np.array(st.session_state.embeddings).astype('float32')
