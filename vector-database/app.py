@@ -18,8 +18,8 @@ st.set_page_config(
 # Configure the Gemini API
 try:
     genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-except AttributeError:
-    st.error("🚨 Gemini API key not found. Please create a .env file with your key.")
+except Exception as e:
+    st.error(f"🚨 Error configuring Gemini API. Please check your .env file. Error: {e}")
     st.stop()
 
 # --- FUNCTIONS ---
