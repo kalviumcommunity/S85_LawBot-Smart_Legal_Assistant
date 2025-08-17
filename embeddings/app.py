@@ -45,7 +45,7 @@ def calculate_similarity(vec1, vec2):
     dot_product = np.dot(vec1, vec2)
     norm_vec1 = np.linalg.norm(vec1)
     norm_vec2 = np.linalg.norm(vec2)
-    return dot_product / (norm_vec1 * norm_vec2)
+    return dot_product / (norm_vec1 * norm_vec2) if (norm_vec1 * norm_vec2) != 0 else 0.0
 
 # --- USER INTERFACE (UI) ---
 st.title("➡️🔢 LawBot's Embeddings Explorer")
