@@ -26,7 +26,7 @@ def get_embedding(text):
     """Generates an embedding for a given piece of text."""
     if not text or not text.strip(): return None
     try:
-        return genai.embed_content(model="models/embedding-001", content=text)['embedding']
+        return genai.embed_content(model=EMBEDDING_MODEL, content=text)['embedding']
     except Exception as e:
         st.error(f"Error generating embedding: {e}")
         return None
